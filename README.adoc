@@ -1,0 +1,68 @@
+﻿= Battleship
+:imagesdir: imagesdir/
+
+A simple battleship game in Python. 🚢
+
+image:img_README_1.png[] image:img_README_2.png[]
+
+== Instructions [Sic]
+
+=== Player information
+* 2 players
+* Each player’s name should be registered.
+* An empty map should be shown after registry.
+* The player will specify the starting and finishing point of each ship.
+* Each positioned ship should appear as a horizontal or vertical set of ‘O’s.
+* The player should confirm the ships are correctly deployed.
+
+=== Types of boats
+* Carrier (5)
+* Battleship (4)
+* Destroyer (3)
+* Submarine (2)
+* Patrol Boat (1)
+
+image::file.png[]
+
+
+=== Game
+* Assign each player a turn based on a random number generator.
+* Each player will introduce an attacking coordinate (it needs to be valid).
+* If the attack was unsuccessful, the attacked cell should be marked with an ‘X’.
+And the next player will start his turn.
+* If the attack was successful, the attacked cell should be marked with a ‘@’.
+The player will keep attacking as long as his attacks are successful.
+The target of the attack should be notified.
+* The game should be stopped when the other player’s ships are totally destroyed.
+
+
+=== Game Analytics
+* After the game is finished, display a pie plot of successful vs unsuccessful attacks of each player.
+* After the game is finished, display a chart that shows the percentage of integrity of the fleet against turns.
+* After the game is finished, plot the histogram of successful streak for each player.
+* Save the plots in different jpeg files with different names depending on the time and date the game was played.
+
+=== Evaluation criteria
+* Main menu (5 pts)
+* Player information (5 pts)
+* Map generation (5 pts)
+* Ship deployment (5 pts)
+* Deployment validation (10 pts)
+* Turn generation (5 pts)
+* Attack generation (10 pts)
+* Attack validation (10 pts)
+* Hit notification (5 pts)
+* Plotting (20 pts)
+* Save files (5 pts)
+* YouTube video explaining your code and running your program(15 pts)
+
+
+https://www.youtube.com/watch?v=OD-Dlny1uUY[Example]
+
+== Plots
+
+image:hist.png[,,300] image:attack.png[,,300] image:integ.png[,,300]
+
+== Logical Diagram
+
+image:map.png[]
